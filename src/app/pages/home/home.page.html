@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Ej . con LocalStorage
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-card>
+    <ion-input type="text" placeholder="Ingrese Nombe"  [(ngModel)]="nombre" ></ion-input>
+    <ion-input type="number" placeholder="Ingrese Numero" [(ngModel)]="numero" ></ion-input>
+  </ion-card>
+  <ion-button shape="block" (click)="guardar()" color="success">Guardar Contacto</ion-button>
+  <ion-button shape="block" (click)="eliminar()" color="warning">Eliminar Contacto</ion-button>
+  <ion-button shape="block" (click)="borrarBD()" color="danger">Borrar BD</ion-button>
+</ion-content>
